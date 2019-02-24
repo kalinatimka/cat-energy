@@ -1,0 +1,48 @@
+// @font-face {
+//   font-family: "OpenSans";
+//   src: url('../fonts/OpenSans-Regular.woff') format('woff'),
+//   url('../fonts/OpenSans-Regular.woff2') format('woff2');
+//    font-weight: normal;
+//    font-style: normal;
+// }
+// @font-face {
+//    font-family: "OpenSans";
+//    src: url('../fonts/OpenSans-Light.woff') format('woff'),
+//    url('../fonts/OpenSans-Light.woff2') format('woff2');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+body{
+   margin: 0;
+   padding: 0;
+   min-width: 1200px;
+
+   font-family: "OpenSans", "Arial", sans-serif;
+   font-weight: 300;
+   font-size: 15px;
+}
+a {
+   text-decoration: none;
+}
+.container {
+   width: 1160px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+ position: absolute;
+
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+
+ white-space: nowrap;
+
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
