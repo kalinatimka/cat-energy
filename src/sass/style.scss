@@ -21,14 +21,11 @@ body{
    font-weight: 300;
    font-size: 15px;
 }
+
 a {
    text-decoration: none;
 }
-.container {
-   width: 1160px;
-   margin: 0 auto;
-   padding: 0 20px;
-}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -45,4 +42,10 @@ input[type="radio"].visually-hidden {
  clip-path: inset(100%);
  clip: rect(0 0 0 0);
  overflow: hidden;
+}
+
+.container {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
