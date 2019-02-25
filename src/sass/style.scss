@@ -13,39 +13,75 @@
 //     font-style: normal;
 // }
 body{
-   margin: 0;
-   padding: 0;
-   min-width: 1200px;
+  margin: 0;
+  padding: 0;
 
-   font-family: "OpenSans", "Arial", sans-serif;
-   font-weight: 300;
-   font-size: 15px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
- position: absolute;
+  position: absolute;
 
- width: 1px;
- height: 1px;
- margin: -1px;
- border: 0;
- padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
- white-space: nowrap;
+  white-space: nowrap;
 
- clip-path: inset(100%);
- clip: rect(0 0 0 0);
- overflow: hidden;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 10px 20px;
+}
+
+.header__menu-toggler {
+  width: 18px;
+  height: 18px;
+  border: 0;
+  background-color: transparent;
+}
+
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__list-item {
+  display: block;
+
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: -20px;
+  margin-right: -20px;
+  font-weight: 500;
+  font-size: 20px;
 }
