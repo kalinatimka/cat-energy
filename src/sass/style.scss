@@ -203,3 +203,45 @@ input[type="radio"].visually-hidden {
 .programs-list__item {
   margin-bottom: 20px;
 }
+
+.instructions__main-header {
+  margin-bottom: 30px;
+}
+
+.instruction__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.instruction__list li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.instruction__image-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  margin-right: 20px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.instruction__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Arial', serif;
+  color: #444444;
+}
+
+.instruction__image {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
