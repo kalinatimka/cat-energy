@@ -44,9 +44,23 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 280px;
+  min-width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.section-header {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #68b738;
 }
 
 .header__wrapper {
@@ -64,6 +78,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__list {
@@ -84,4 +99,44 @@ input[type="radio"].visually-hidden {
   margin-right: -20px;
   font-weight: 500;
   font-size: 20px;
+}
+
+.site-banner .container {
+  background: url('../img/index-background-mobile.png') right top,
+  linear-gradient(#65a93c 305px, #ffffff 305px 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-banner__main-header {
+  margin: 0;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.site-banner__slogan {
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+
+.site-banner__image {
+  width: 280px;
+  height: 270px;
+  padding-bottom: 3px;
+}
+
+.site-banner__link {
+  padding: 12px 10px;
+  box-sizing: border-box;
+  margin-bottom: 23px;
 }
