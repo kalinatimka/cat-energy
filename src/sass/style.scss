@@ -15,7 +15,7 @@
 body{
   margin: 0;
   padding: 0;
-
+  min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -244,4 +244,134 @@ input[type="radio"].visually-hidden {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.example {
+  background-color: #f2f2f2;
+  padding-bottom: 35px;
+}
+
+.example__main-header {
+  padding: 20px 0;
+}
+
+.example__description {
+  margin: 0;
+  font-family: 'Arial', serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 25px;
+}
+
+.example__parameters {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.example__parameters div {
+  display: flex;
+  width: 125px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 30px;
+}
+
+.example__parameters div:last-child {
+  margin-right: 0;
+}
+
+.example__parameters dd {
+  order: 1;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 13px 0px;
+}
+
+.example__parameters dt {
+  position: absolute;
+  bottom: -17px;
+  background-color: #f2f2f2;
+  order: 2;
+  display: block;
+  width: 85px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #444444;
+}
+
+.example__expences {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.slider__image-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 240px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.slider__image-wrapper li {
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+  // transform: translateX(-100%);
+}
+
+.slider__image {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__button {
+  border: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.slider__progress-bar {
+  width: 85px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 3px 5px;
+}
+
+.slider__toddler {
+  height: 6px;
+  width: 35px;
+  background-color: #68b738;
+  border-radius: 15px;
 }
