@@ -65,6 +65,10 @@ input[type="radio"].visually-hidden {
   background-color: #68b738;
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -81,6 +85,27 @@ input[type="radio"].visually-hidden {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  position: relative;
+}
+
+.header__menu-toggler::before,
+.header__menu-toggler::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  width: 24px;
+  background-color: #000000;
+}
+
+.header__menu-toggler::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header__menu-toggler::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .header__list {
@@ -101,6 +126,10 @@ input[type="radio"].visually-hidden {
   margin-right: -20px;
   font-weight: 500;
   font-size: 20px;
+}
+
+.header__logo {
+  margin-right: 10px;
 }
 
 .site-banner .container {
@@ -145,6 +174,7 @@ input[type="radio"].visually-hidden {
 .program {
   background-color: #f2f2f2;
   padding: 0px 20px;
+  padding-bottom: 20px;
 }
 
 .program__header {
@@ -173,10 +203,12 @@ input[type="radio"].visually-hidden {
 
 .program__link {
   color: #111111;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  display: block;
-  padding-bottom: 20px;
+  display: inline-block;
+  padding-right: 40px;
+  background: url("../img/right-arrow-long.png") right center no-repeat;
 }
 
 .program__image-wrapper {
@@ -204,7 +236,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.instructions__main-header {
+.instruction {
+  padding-bottom: 20px;
+}
+
+.instruction__main-header {
   margin-bottom: 30px;
 }
 
@@ -367,6 +403,7 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
   background-color: #ffffff;
   padding: 3px 5px;
+  margin: 0 12px;
 }
 
 .slider__toddler {
@@ -374,4 +411,115 @@ input[type="radio"].visually-hidden {
   width: 35px;
   background-color: #68b738;
   border-radius: 15px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding-bottom: 20px;
+}
+
+.footer__invite {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #111111;
+  margin-right: 15px;
+}
+
+.footer__address {
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer__map {
+  height: 360px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 35px;
+}
+
+.footer__address-n-invite {
+  background-color: #ffffff;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-top: 27px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-networks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.footer__social-network {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.footer__social-network--middle {
+  margin: 0 30px;
+}
+
+.footer__social-network .sn-icon {
+  fill: #666666;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer__social-network:hover .sn-icon {
+  fill: #68b738;
+}
+
+.footer__social-network:active .sn-icon {
+  opacity: 0.3;
+}
+
+.footer__school-name {
+  font-family: Arial, sans-serif;
+  color: #444444;
+}
+
+.footer__school-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo-htmlacademy {
+  fill: #666666;
+}
+
+.footer__logo-htmlacademy:hover {
+  fill: #68b738;
+}
+
+.footer__logo-htmlacademy:active {
+  opacity: 0.3;
 }
