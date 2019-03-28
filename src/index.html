@@ -15,6 +15,7 @@
       <div class="header__wrapper">
         <a href="" class="header__logo-link">
           <picture>
+            <source srcset="img/logo-desktop.png" media="(min-width: 1440px)" alt="Логотип(изображение)">
             <source srcset="img/logo-tablet.png" media="(min-width: 768px)" alt="Логотип(изображение)">
             <img src="img/logo-mobile.png" alt="Логотип(изображение)" class="header__logo-image header__logo-image--mobile">
           </picture>
@@ -34,10 +35,16 @@
   <main>
     <section class="site-banner">
       <div class="container">
-        <h2 class="site-banner__main-header section-header">Функциональное<br class="site-banner__main-header--tablet"> питание для котов</h2>
-        <p class="site-banner__slogan">Занялся собой? Займись котом!</p>
-        <img src="img/index-can-mobile.png" alt="Наш продукт" class="site-banner__image">
-        <a href="#" class="site-banner__link button">Подобрать программу</a>
+        <div class="site-banner__info">
+          <h2 class="site-banner__main-header section-header">Функциональное<br class="site-banner__main-header--tablet"> питание для котов</h2>
+          <p class="site-banner__slogan">Занялся собой? Займись котом!</p>
+          <picture>
+            <source srcset="img/index-can.png" media="(min-width: 1440px)" alt="Наш продукт">
+            <img src="img/index-can-mobile.png" alt="Наш продукт" class="site-banner__image">
+          </picture>
+          <a href="#" class="site-banner__link button">Подобрать программу</a>
+        </div>
+
       </div>
     </section>
     <section class="programs-list">
@@ -47,7 +54,8 @@
           <div class="program__full-header">
             <div class="program__image-wrapper">
               <picture>
-                <source srcset="img/cat-slim--tablet.png" media="(min-width: 768px)" class="program__image program__image--change-first">
+                <source srcset="img/cat-slim.png" media="(min-width: 1440px)">
+                <source srcset="img/cat-slim--tablet.png" media="(min-width: 768px)">
                 <img src="img/cat2.png" alt="Изображение элемента списка" class="program__image program__image--change-first">
               </picture>
             </div>
@@ -62,7 +70,8 @@
           <div class="program__full-header">
             <div class="program__image-wrapper">
               <picture>
-                <source srcset="img/cat-pro--tablet.png" media="(min-width: 768px)" class="program__image">
+                <source srcset="img/cat-pro.png" media="(min-width: 1440px)">
+                <source srcset="img/cat-pro--tablet.png" media="(min-width: 768px)">
                 <img src="img/cat1.png" alt="Изображение элемента списка" class="program__image ">
               </picture>
             </div>
@@ -155,7 +164,8 @@
       </div>
       <!-- map -->
       <div class="footer__map">
-        <iframe src="https://yandex.by/map-widget/v1/-/CCU3jHKz" width="100%" height="360" frameborder="0" allowfullscreen="true"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af15c8bf42ae6ead5634d74f935011a6c5c5f62f229cc397c24f96a8295297190&amp;source=constructor" width="100%" height="360" frameborder="0"></iframe>
+        <!-- <iframe src="https://yandex.by/map-widget/v1/-/CCU3jHKz" width="100%" height="360" frameborder="0" allowfullscreen="true"></iframe> -->
       </div>
       <div class="footer__bottom">
         <img src="img/footer-logo-mobile.png" class="footer__logo" alt="Логотип в подвале">
