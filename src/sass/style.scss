@@ -875,10 +875,12 @@ input[type="radio"].visually-hidden {
   .header__list-item:active {
     color: rgba($color: #ffffff, $alpha: 0.3);
   }
-  .header__wrapper {
-    padding: 0;
+  .header .container {
     padding-top: 55px;
     padding-bottom: 27px;
+  }
+  .header__wrapper {
+    padding: 0;
   }
   .site-banner {
     padding-bottom: 80px;
@@ -1325,6 +1327,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .gift {
     padding-bottom: 80px;
@@ -1351,6 +1354,94 @@ input[type="radio"].visually-hidden {
 @media(min-width: 1440px) {
   .header__list-item--inner {
     color: #000000;
+  }
+  .header__list-item--inner:hover {
+    color: rgba($color: #000000, $alpha: 0.6)
+  }
+  .header__list-item--inner:active {
+    color: rgba($color: #000000, $alpha: 0.3)
+  }
+  .header__list-item--inner.header__list-item--active {
+    border-bottom-color: #68b738;
+  }
+  .catalog_wrapper {
+    justify-content: flex-start;
+    margin-left: -6.56%;
+  }
+  .product {
+    width: 18.8%;
+    margin-left: 6.15%;
+  }
+  .catalog__all {
+    width: 18.8%;
+    margin-left: 6.15%;
+    margin-top: 80px;
+  }
+  .product {
+    background: #f2f2f2 linear-gradient(#ffffff 80px, #f2f2f2 0px);
+  }
+  .product__image-wrapper {
+    height: 208px;
+  }
+  .decorative-header {
+    margin-left: -110px;
+    margin-right: -110px;
+  }
+  .decorative-header::before {
+    width: 70px;
+    margin-right: 40px;
+  }
+  .decorative-header::after {
+    margin-left: 40px;
+  }
+  .additional-products__wrapper {
+    width: 73.36%;
+  }
+  .add-product__header {
+    width: 36.31%;
+    margin: 0;
+  }
+  .add-products__options {
+    width: 31.84%;
+    margin: 0;
+  }
+  .add-product {
+    padding: 15px 0px;
+    border-left: none;
+    border-right: none;
+  }
+  .additional-products .container {
+    position: relative;
+  }
+  .additional-products {
+    padding-bottom: 85px;
+  }
+  .gift {
+    position: absolute;
+    top: 143px;
+    right: 110px;
+    width: 17.01%;
+    padding: 0;
+  }
+  .gift__description {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .gift__icon {
+    margin: 0;
+    margin-top: 65px;
+  }
+  .gift__background {
+    flex-direction: column;
+    height: 301px;
+    background: url("../img/gift-photo-desktop.jpg") no-repeat center center /cover;
+  }
+  .add-product .product__link {
+    width: 245px;
+  }
+  .footer__address-n-invite--inner {
+    background-color: #ffffff;
   }
 }
 
