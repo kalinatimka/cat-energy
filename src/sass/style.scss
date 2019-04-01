@@ -1074,7 +1074,7 @@ input[type="radio"].visually-hidden {
 .product__options {
   font-family: 'Arial', serif;
   font-size: 12px;
-  border-spacing: 0;
+  border-collapse: collapse;
 }
 .product__options td:nth-child(2n) {
   text-align: right;
@@ -1163,7 +1163,7 @@ input[type="radio"].visually-hidden {
 .add-products__options {
   width: 100%;
   margin-bottom: 13px;
-  border-spacing: 0;
+  border-collapse: collapse;
 }
 .add-products__options td {
   padding: 0;
@@ -1182,7 +1182,7 @@ input[type="radio"].visually-hidden {
 .gift__background {
   width: 100%;
   height: 289px;
-  background: #68b738 url("../img/gift-photo-mobile.jpg") no-repeat center center /contain;
+  background: #68b738 url("../img/gift-photo-mobile.jpg") no-repeat center center /cover;
 }
 .gift__icon {
   display: block;
@@ -1203,6 +1203,150 @@ input[type="radio"].visually-hidden {
 }
 .footer__address-n-invite--inner {
   background-color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .catalog__main-header {
+    margin-bottom: 50px;
+  }
+  .catalog_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .product {
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0px 40px 40px;
+    box-sizing: border-box;
+    width: 45.76%;
+    flex-direction: column;
+    background: #f2f2f2 linear-gradient(#ffffff 115px, #f2f2f2 0px);
+  }
+  .product__image-wrapper {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 35px;
+  }
+  .product__info {
+    width: 100%;
+  }
+  .product__info h3 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  .product__image {
+    top: auto;
+  }
+  .product__options {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .product__options td {
+    padding: 5px 0px;
+  }
+  .product__options tr {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .catalog__all {
+    margin: 0;
+    margin-top: 115px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    width: 45.76%;
+    padding: 55px 38px 40px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .catalog__all img {
+    margin-bottom: 0;
+    // margin-bottom: 45px;
+  }
+  .catalog__all h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 22px;
+  }
+  .catalog__all p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .product__link-to-all {
+    margin: 0;
+    font-size: 16px;
+  }
+  .decorative-header {
+    margin-right: -30px;
+    margin-left: -30px;
+    font-size: 36px;
+    // line-height: 36px;
+  }
+  .decorative-header::after {
+    margin-left: 35px;
+  }
+  .decorative-header::before {
+    margin-top: 13px;
+    margin-right: 35px;
+    content: "";
+    height: 3px;
+    width: 30px;
+    background-color: #68b738;
+  }
+  .additional-products__main-header {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .add-product {
+    padding: 27px 38px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+  .add-product__header {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .add-products__options {
+    width: auto;
+  }
+  .add-products__options td {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .add-products__options td:nth-child(2n) {
+    min-width: 95px;
+  }
+  .add-product__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .gift {
+    padding-bottom: 80px;
+  }
+  .gift__icon {
+    margin: 0;
+    padding: 0;
+    margin-left: 90px;
+  }
+  .gift__description {
+    margin: 0;
+    text-align: left;
+    width: 170px;
+    margin-right: 125px;
+  }
+  .gift__background {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #68b738 url("../img/gift-photo-tablet.jpg") no-repeat center center /cover;
+  }
 }
 @media(min-width: 1440px) {
   .header__list-item--inner {
