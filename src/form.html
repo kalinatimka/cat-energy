@@ -37,55 +37,64 @@
       <form action="https://echo.htmlacademy.ru" class="form" method="POST">
         <section class="form__cat-data">
           <h2 class="section-header cat-data__header">Подбор программы</h2>
-          <p class="cat-data__description">
-            Заполните анкету и мы подберем программу питания для Вашего кота
-          </p>
-          <div class="field">
-            <label for="cat-name" class="field-label">Имя:*</label>
-            <input type="text" id="cat-name" class="field-input" placeholder="Барсик">
-          </div>
-          <div class="field">
-            <label for="cat-weight" class="field-label">Вес (кг):*</label>
-            <input type="text" id="cat-weight" class="field-input" placeholder="7">
-          </div>
-          <div class="field">
-            <label for="cat-years" class="field-label">Возраст (лет):*</label>
-            <input type="text" id="cat-years" class="field-input" placeholder="7">
+          <div class="section__wrapper">
+            <p class="cat-data__description">
+              Заполните анкету и мы подберем программу питания для Вашего кота
+            </p>
+            <div class="field">
+              <label for="cat-name" class="field-label">Имя:*</label>
+              <input type="text" id="cat-name" class="field-input" placeholder="Барсик">
+            </div>
+            <div class="field">
+              <label for="cat-weight" class="field-label">Вес (кг):*</label>
+              <input type="text" id="cat-weight" class="field-input" placeholder="7">
+            </div>
+            <div class="field">
+              <label for="cat-years" class="field-label">Возраст (лет):*</label>
+              <input type="text" id="cat-years" class="field-input" placeholder="7">
+            </div>
           </div>
         </section>
         <section class="form__program">
           <h3 class="visually-hidden">Выберите программу:</h3>
-          <div class="radio">
-            <input type="radio" name="program" value="slim" class="visually-hidden radio-button" id="program__radio-1" checked>
-            <label for="program__radio-1" class="radio-label">Похудение</label>
-          </div>
-          <div class="radio">
-            <input type="radio" name="program" value="pro" class="visually-hidden radio-button" id="program__radio-2">
-            <label for="program__radio-2" class="radio-label">Набор массы</label>
-          </div>
-          <div class="radio">
-            <input type="radio" name="program" value="help me" class="visually-hidden radio-button" id="program__radio-3">
-            <label for="program__radio-3" class="radio-label">Не знаю (Нужен Ваш совет)</label>
+          <div class="program__wrapper">
+            <div class="radio">
+              <input type="radio" name="program" value="slim" class="visually-hidden radio-button" id="program__radio-1" checked>
+              <label for="program__radio-1" class="radio-label">Похудение</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="program" value="pro" class="visually-hidden radio-button" id="program__radio-2">
+              <label for="program__radio-2" class="radio-label">Набор массы</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="program" value="help me" class="visually-hidden radio-button" id="program__radio-3">
+              <label for="program__radio-3" class="radio-label">Не знаю (Нужен Ваш совет)</label>
+            </div>
           </div>
         </section>
         <section class="form__contact-data">
-          <h3 class="contact-data__header decorative-header">Контактные данные <br>(владельца кота)</h3>
-          <div class="field">
-            <label for="contact-data__mail" class="field-label">Email:*</label>
-            <input type="text" id="contact-data__mail" class="field-input" placeholder="kuklachev@gmail.com">
-          </div>
-          <div class="field">
-            <label for="contact-data__phone" class="field-label">Телефон:*</label>
-            <input type="text" id="contact-data__phone" class="field-input" placeholder="8 (960) 900-60-90">
+          <h3 class="contact-data__header decorative-header">Контактные данные <br class="hide-break-rule">(владельца кота)</h3>
+          <div class="section__wrapper">
+            <div class="field">
+              <label for="contact-data__mail" class="field-label">Email:*</label>
+              <input type="text" id="contact-data__mail" class="field-input" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="field">
+              <label for="contact-data__phone" class="field-label">Телефон:*</label>
+              <input type="text" id="contact-data__phone" class="field-input" placeholder="8 (960) 900-60-90">
+            </div>
           </div>
         </section>
         <section class="form__comment">
           <h3 class="comment__header decorative-header">Комментарий</h3>
-          <textarea name="comment" id="" class="comment__area" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="section__wrapper">
+            <textarea name="comment" id="" class="comment__area" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </section>
         <section class="form__additionally">
           <h3 class="additionally__header decorative-header">Дополнительно</h3>
-          <div class="checkbox">
+          <div class="section__wrapper">
+            <div class="checkbox">
               <input type="checkbox" name="sweetener" class="visually-hidden checkbox-button" id="additionally__chkbx-1" checked>
               <label for="additionally__chkbx-1" class="checkbox-label">Сахарозаменитель</label>
             </div>
@@ -101,9 +110,13 @@
               <input type="checkbox" name="vitamins" class="visually-hidden checkbox-button" id="additionally__chkbx-4">
               <label for="additionally__chkbx-4" class="checkbox-label">Витамины</label>
             </div>
+          </div>
         </section>
-        <button type="submit" class="button form__button">Отправить заявку</button>
-        <p class="form__disclaimer">* - Обязательные поля</p>
+        <div class="button__wrapper">
+          <button type="submit" class="button form__button">Отправить заявку</button>
+          <p class="form__disclaimer">* - Обязательные поля</p>
+        </div>
+
       </form>
     </div>
   </main>
